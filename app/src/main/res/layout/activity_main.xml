@@ -14,4 +14,11 @@
     <!--        match_parent表示宽度（或者长度）和当前的父布局一样-->
 <!--    wrap——content表示让当前控件的大小可以适应所含的内容-->
 <!--    garvity:指定对齐方式-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_1"
+        android:text="Button"/>
+<!--    按钮中的英文字符都会转换为大写-->
+
     </LinearLayout>
