@@ -21,4 +21,10 @@
         android:text="Button"/>
 <!--    按钮中的英文字符都会转换为大写-->
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_1"
+        android:hint="Text something here"
+        android:maxLines="3"/>
     </LinearLayout>
