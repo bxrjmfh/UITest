@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.none.uitest.databinding.ActivityMainBinding
+var is_set:Boolean=false
 
 class MainActivity : AppCompatActivity()//, View.OnClickListener
 {
@@ -16,7 +17,17 @@ class MainActivity : AppCompatActivity()//, View.OnClickListener
         setContentView(binding_1.root)
         binding_1.button1.setOnClickListener(){
            //一种按钮方法的写法
-            Toast.makeText(this,binding_1.edittext1.text.toString(),Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,binding_1.edittext1.text.toString()+"再看看图片吧",Toast.LENGTH_SHORT).show()
+            if(!is_set){
+                binding_1.image1.setImageResource(R.drawable.img_2)
+                is_set=true
+            }
+            else
+            {
+                binding_1.image1.setImageResource(R.drawable.img_1)
+                is_set=false
+            }
+
 
         }
     }
